@@ -9,6 +9,7 @@ SITE="$1"
 DOMAIN=$(echo "$SITE" | egrep -o '(([a-zA-Z0-9]([a-zA-Z0-9\-]{0,65}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6})')
 
 wget \
+	--no-check-certificate \
 	--random-wait \
 	--recursive \
 	--page-requisites \
